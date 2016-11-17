@@ -1,0 +1,373 @@
+<template name="landing">
+
+    <div class="navbar-wrapper">
+        <nav class="navbar navbar-default navbar-fixed-top navbar-scroll" id="navbarDefiend" style="background:#cacaca;opacity: 0.4"  role="navigation" >
+            <div class="container">
+                <div class="navbar-header page-scroll">
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <!--<a  href="{{pathFor route='dashboard1'}}"><img src="images/mainindex/rewattlogo.png"></a>-->
+                </div>
+                <div id="navbar" class="navbar-collapse collapse">
+                    <!--style="background-color:#cacaca;opacity: 0.3;"-->
+                    <ul class="nav navbar-nav navbar-right ul-nav" >
+                        <li><a style="color:black;" class="page-scroll" href="#page-top">首页</a></li>
+                        <li><a style="color:black;" class="page-scroll" href="#features">关于我们</a></li>
+                        <li><a style="color:black;" class="page-scroll" href="#team">产品中心</a></li>
+                        <li><a style="color:black;" class="page-scroll" href="#example">典型案例</a></li>
+                        <li><a style="color:black;" class="page-scroll" href="#pricing">新闻中心</a></li>
+                        <li><a style="color:black;" class="page-scroll" href="#phone-download">手机端下载</a></li>
+                        <li><a style="color:black;" class="page-scroll" href="#contact">联系我们</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <div style="position: relative; left: 10%;top: -17px;">
+            <a  href="{{pathFor route='dashboard1'}}"><img src="images/mainindex/rewattlogo.png"></a>
+        </div>
+    </div>
+
+
+    <div class="first-page">
+        <div id="inSlider" class="carousel carousel-fade" data-ride="carousel">
+            <ol class="carousel-indicators">
+                <li data-target="#inSlider" data-slide-to="0" class="active"></li>
+                <li data-target="#inSlider" data-slide-to="1"></li>
+            </ol>
+            <div class="carousel-inner" role="listbox">
+                <div class="item active">
+                    <div class="container">
+                        <div class="carousel-image wow zoomIn">
+                            <img src="images/mainindex/pop.png" alt="laptop"/>
+                        </div>
+                    </div>
+                    <div class="header-back one" style="background:url('images/mainindex/banner1.jpg') center no-repeat"></div>
+
+                </div>
+                <div class="item">
+                    <div class="container">
+                    </div>
+                    <!-- Set background for slide in css -->
+                    <div class="header-back two" style="background:url('images/mainindex/banner2.jpg') center no-repeat"></div>
+                </div>
+            </div>
+            <a class="left carousel-control" href="#inSlider" role="button" data-slide="prev">
+                <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+                <span class="sr-only">Previous</span>
+            </a>
+            <a class="right carousel-control" href="#inSlider" role="button" data-slide="next">
+                <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+                <span class="sr-only">Next</span>
+            </a>
+        </div>
+        <section  class="container services" style="width: 100%;">
+
+            <div class="row col-md-12 ">
+                <div class="col-md-10 col-md-push-1 center-block">
+                <div class="col-sm-3" style="padding:0px 25px">
+                    <h2>关于我们</h2>
+                    <div style="text-align:left">
+                        <img src="images/mainindex/about-us-set.jpg" alt="dashboard" class="img-responsive pull-left">
+                    </div>
+                    <p style="margin-top:130px;font-size:14px;color: #959595;">瑞和电桩是北京瑞和新能电气技术有限公司生产的具有自主知识产权和多项核心技术的高端品牌充电桩，能够实现为市面上大多数的电动汽车提供服务。目前我公司充电桩主要业务有充电桩制造、充电桩销售、电动汽车租赁、充电桩服务平台等。</p>
+                    <!--<p><a class="navy-link" href="#" role="button">详细 &raquo;</a></p>-->
+                </div>
+                <div class="col-sm-3" style="padding:0px 25px">
+                    <h2>产品中心</h2>
+                    <div style="text-align:left">
+                        <img src="images/mainindex/product-set.jpg" alt="dashboard" class="img-responsive pull-left">
+                    </div>
+                    <p style="margin-top:130px;font-size:14px;color: #959595;">智能直流充电桩\智能交流充电桩
+                        特点：具有充电稳定性高，安全可靠， 效率高，强抗震，可通过APP进行识别，充电计费，定位及移动支付。
+                    </p>
+                </div>
+                <div class="col-sm-3" style="padding:0px 25px">
+                    <h2>典型案例</h2>
+                    <div style="text-align:left">
+                        <img src="images/mainindex/example-set.jpg" alt="dashboard" class="img-responsive pull-left">
+                    </div>
+                    <p style="margin-top:130px;font-size:14px;color: #959595;">瑞和新能智能充电桩网点，集中解决网点附近新能源汽车充电及临时用车难题。网点布局涵盖了国内和国外，详见案例介绍。</p>
+                </div>
+                <div class="col-sm-3" style="padding:0px 25px">
+                    <h2>新闻中心</h2>
+                    <div style="text-align:left">
+                        <img src="images/mainindex/new-center-set.jpg" alt="dashboard" class="img-responsive pull-left">
+                    </div>
+                    <p style="margin-top:130px;font-size:14px;color: #959595;">瑞和新能携第一款国产欧标智能充电桩亮相海外博览会，促进了瑞和新能智能充电桩在海外的业务。</p>
+                </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="features" class=" gray-section container features"  style="width: 100%;">
+            <div class="col-md-12">
+                <div class="col-md-10 col-md-push-1">
+                    <div class="row">
+                        <div class="col-lg-12 center-block" style="text-align: center">
+                            <div class="navy-line"></div>
+                            <h1>关于我们</h1>
+                            <p style="font-size:14px;color: #959595;">携手瑞和 共建绿色家园</p>
+                        </div>
+                    </div>
+                    <div class="row" style="margin-bottom: 60px;">
+                        <div class="col-lg-5 col-lg-offset-1 features-text wow fadeInLeft" style="margin-top:100px;">
+                            <p style="font-size:14px;color: #959595;">
+                                瑞和电桩是北京瑞和新能电气技术有限公司生产的具有自主知识产权和多项核心技术的高端品牌充电桩，能够实现为市面上大多数的电动汽车提供服务。目前我司充电桩主要业务有充电桩制造、充电桩销售、电动汽车租赁、充电桩服务平台等。
+                            </p>
+                        </div>
+                        <div class="col-lg-5  text-right wow fadeInRight">
+                            <img src="images/mainindex/about-us.jpg" alt="dashboard" class="img-responsive pull-right">
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="team" class="container team" style="width: 100%;">
+            <div class="col-md-12">
+            <div class="col-md-10 col-md-push-1">
+
+                <div class="row">
+                    <div class="col-md-12 text-center">
+                        <div class="navy-line"></div>
+                        <h1>产品中心</h1>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="team-member col-sm-6 wow fadeInLeft">
+
+                        <a href="javascript:" id="showAlternationProductDetail">
+                            <img src="images/mainindex/product-alternation.png" class="img-responsive img-circle" alt="">
+                        </a>
+
+                        <h4 style="margin-top: 20px;">智能交流充电桩</h4>
+                        <p style="font-size:14px;color: #959595;">
+                            智能三项交流充电桩：分为立式和壁挂两种模式，具有体积小，重量轻，安装灵活的有点，适合公共停车场、小区停车场及社会充电站等场合。
+                        </p>
+
+                    </div>
+                    <div class="team-member col-sm-6 wow fadeInRight">
+                        <a href="javascript:" id="showDirectProductDetail">
+                            <img src="images/mainindex/product-direct.png" class="img-responsive img-circle" alt="">
+                        </a>
+                        <h4 style="margin-top: 20px;">智能直流充电桩</h4>
+                        <p style="font-size:14px;color: #959595;">
+                            智能直流充电桩：为电动汽车提供宽电压电流范围的直流充电，适合于公交枢纽、高速公路、大、中型充电站等需要提供快速充电服务的场合。
+                        </p>
+
+                    </div>
+
+                </div>
+                <div class="row">
+                    <div class="col-lg-8 col-lg-offset-2 text-center m-t-lg m-b-lg">
+                    </div>
+                </div>
+            </div>
+            </div>
+        </section>
+
+
+        <section id="example"  class="example gray-section container features center-block" style="width: 100%;">
+            <div class="col-md-12">
+                <div class="row">
+                    <div class="col-lg-12 text-center">
+                        <div class="navy-line"></div>
+                        <h1>典型案例 </h1>
+                    </div>
+                </div>
+                <div class="row center-block">
+                    <div class="col-md-3 col-lg-offset-1 text-center wow fadeInLeft">
+                        <div>
+                            <img src="images/mainindex/example-left-top.jpg" alt="dashboard" class="img-responsive">
+                            <p style="margin-top: 10px;color: #959595;font-size: 14px;font-weight: bold;">中关村1+1大厦站点成立</p>
+                        </div>
+                        <div class="m-t-lg" style="margin-top:155px;">
+                            <img src="images/mainindex/example-left-bottom.jpg" alt="dashboard" class="img-responsive">
+                            <p style="margin-top: 10px;color: #959595;font-size: 14px;font-weight: bold;">中关村1+1大厦站点成立</p>
+                        </div>
+                    </div>
+                    <div class="col-md-4 text-center  wow zoomIn">
+                        <img src="images/mainindex/example-center.png" alt="dashboard" class="img-responsive">
+                        <p style="margin-top: 0px;color: #959595;font-size: 14px;font-weight: bold;">三相交流充电桩</p>
+                    </div>
+                    <div class="col-md-3 text-center wow fadeInRight">
+                        <div>
+                            <img src="images/mainindex/example-right-top.jpg" alt="dashboard" class="img-responsive">
+                            <p style="margin-top: 10px;color: #959595;font-size: 14px;font-weight: bold;">瑞和新能电桩在国外为特斯拉充电</p>
+                        </div>
+                        <div class="m-t-lg" style="margin-top:155px;">
+                            <img src="images/mainindex/example-right-bottom.jpg" alt="dashboard" class="img-responsive">
+                            <p style="margin-top: 10px;color: #959595;font-size: 14px;font-weight: bold;">瑞和新能电桩国外站点</p>
+                        </div>
+                    </div>
+                    <div class="col-md-1"></div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-8 col-lg-offset-2 text-center m-t-lg m-b-lg">
+                    </div>
+                </div>
+            </div>
+
+        </section>
+
+        <section id="pricing" class="pricing container">
+            <div>
+            <div class="col-md-12">
+                <div class="container" style="width: 100%;">
+                    <div class="row m-b-lg">
+                        <div class="col-lg-12 text-center">
+                            <div class="navy-line"></div>
+                            <h1>新闻中心</h1>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="row features-block col-md-12">
+                            <div class="col-lg-6 text-left wow fadeInLeft" >
+                                <img src="images/mainindex/new-china.jpg" alt="dashboard" class="img-responsive pull-left">
+                            </div>
+                            <div class="col-lg-6  wow fadeInRight center-block">
+                                <!--features-text-->
+                                <br>
+                                <h4>瑞和新能电桩进驻1+1大厦，开启中关村电车时代</h4>
+                                <p style="color: #959595;font-size: 14px;">
+                                    2015年9月18日，北京瑞和新能电气技术有限公司在中关村1+1大厦设立的第一个瑞和智能充电站点正式投入使用，该站点的落成意味着瑞和新能智能充电桩基础设施建设项目正式启动。
+                                </p>
+                                <a  href="javascript:" id="news1More">更多>></a>
+                            </div>
+
+                        </div>
+
+                        <div class="row features-block col-md-12">
+                            <div class="col-lg-6 text-left wow fadeInLeft">
+                                <img src="images/mainindex/new-foriegn.jpg" alt="dashboard" class="img-responsive pull-left">
+                            </div>
+                            <div class="col-lg-6  wow fadeInRight center-block" >
+                                <br>
+                                <h4>瑞和新能受邀参加慕尼黑ECARTEC博览会</h4>
+                                <p style="color: #959595;font-size: 14px;">
+                                    ECARTEC展会是汇聚世界新能源车领域专业人士的顶级国际博览会，行业领先的制造商们将在此展示电能动力车领域的现状与前景。博览会的展览领域将包括电能动力车、混合动力车、蓄能技术、充电技术，驱动与引擎技术、能源、基础设施和金融。北京瑞和新能电气技术有限公司受邀参加此次电车盛宴。
+                                </p>
+                                <a  href="javascript:" id="news2More">更多>></a>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="row m-t-lg">
+                        <div class="col-lg-8 col-lg-offset-2 text-center m-t-lg">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            </div>
+        </section>
+
+        <section id="phone-download" class="container gray-section phone-download" style="width: 100%;">
+            <div class="col-md-10 col-md-push-1 center-block">
+                <div class="row">
+                    <div class="col-lg-12 text-center">
+                        <div class="navy-line"></div>
+                        <h1>手机端下载</h1>
+                        <p style="color: #959595;font-size: 14px;">智能电桩APP可实现查找充电网点、扫码充电、注册会员等功能</p>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-4 text-center wow fadeInLeft" style="margin-top: 80px">
+                        <p style="color: #959595;font-size: 14px;">
+                            <!--扫描二维码-->
+                            下载“桩+”手机版
+                        </p>
+                        <a target="_blank" href="https://itunes.apple.com/cn/app/zhuang+/id1018098039?mt=8"  class="btn btn-primary btn btn-white">iphone免费下载</a>
+
+                    </div>
+                    <div class="col-md-4 text-center wow fadeInRight">
+                        <p style="color: #959595;font-size: 14px;">
+                            扫描二维码下载
+                        </p>
+                        {{>hello}}
+                    </div>
+                    <div class="col-md-4 text-center wow fadeInRight" style="margin-top: 80px">
+                        <p style="color: #959595;font-size: 14px;">
+                            <!--扫描二维码-->
+                            下载“桩+”手机版
+                        </p>
+                        <a href="http://www.chargeclouds.cn/download/ElectrocarSteward.apk" class="btn btn-primary btn btn-white">Android免费下载</a>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-8 col-lg-offset-2 text-center m-t-lg m-b-lg">
+                    </div>
+                </div>
+            </div>
+
+        </section>
+
+    </div>
+    <div>
+
+        <div class="second-page product-alternation-detail-page" style="display:none">
+            {{>productAlternationTemplate}}
+        </div>
+        <div class="second-page product-direct-detail-page" style="display:none">
+            {{>productDirectTemplate}}
+        </div>
+        <div class="second-page news1-detail-page" style="display:none">
+            {{>news1Template}}
+        </div>
+        <div class="second-page news2-detail-page" style="display:none">
+            {{>news2Template}}
+        </div>
+
+        {{>contact}}
+    </div>
+
+</template>
+
+<template name="hello">
+    <div id="qrcode"></div>
+</template>
+<template name="contact">
+    <section id="contact" class="contact">
+        <div class="container col-md-12" style="width: 100%;">
+            <div class="col-md-10 col-md-push-1" style="background: url('/img/landing/word_map.png') center no-repeat;">
+                <div class="row m-b-lg">
+                    <div class="col-lg-12 text-center">
+                        <div class="navy-line"></div>
+                        <h1>联系我们</h1>
+                        <p style="color: #959595;font-size: 14px;">北京易行绿动信息技术有限公司</p>
+                    </div>
+                </div>
+                <div class="row m-b-lg">
+                    <div class="col-lg-3 col-lg-offset-2" >
+                        <address style="color: #959595;font-size: 14px;">
+                            地址：北京市海淀区丹棱街甲1号互联网金融中心18层
+                            <br>
+                            电话：010-62428188
+                            <br>
+                            传真：010-62428000
+                            <br>
+                            邮箱：info@re-watt.com
+                        </address>
+                    </div>
+                    <div class="col-lg-3 col-lg-offset-2">
+                        <p class="text-color" style="color: #959595;font-size: 14px;">
+                            携手瑞和，共创绿色家园。
+                        </p>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-lg-8 col-lg-offset-2 text-center m-t-lg m-b-lg">
+                        <p style="color: #959595;font-size: 14px;"><strong>&copy; 2015 北京易行绿动信息技术有限公司</strong><br/></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</template>
+
+

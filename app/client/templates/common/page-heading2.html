@@ -1,0 +1,20 @@
+<template name="pageHeading2">
+    <div class="row wrapper border-bottom white-bg page-heading">
+        <div class="col-lg-12">
+            <!-- <h2>{{category}}</h2> -->
+            <ol class="breadcrumb">
+                <li>
+                    <a href="{{pathFor route=home}}">Home</a>
+                </li>
+                {{#if category}}
+                <li>
+                    <a href="{{pathFor categoryPath}}">{{category}}</a>
+                </li>
+                {{/if}}
+                <li class="active">
+                    <strong>{{title}}</strong>
+                </li>
+            </ol>
+        </div>
+    </div>
+</template>

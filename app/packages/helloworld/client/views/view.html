@@ -1,0 +1,52 @@
+<template name="helloworldView">
+    <div class="container">
+
+        {{> pageHeading2 title='view' category='Helloworld' categoryPath='helloworldIndex'}}
+
+        {{#with model}}
+        <div class="title">
+            <!-- <h3 class="pull-left">{{_ "view_helloworld"}}</h3> -->
+            <h5 class="pull-right">ID = #{{_id}}</h5>
+            <div class="toolbar pull-right">
+                <a href="{{pathFor 'helloworldIndex'}}" class="btn btn-default">{{_ "back"}}</a>
+                <a href="{{pathFor 'helloworldUpdate'}}" class="btn btn-info">{{_ "update"}}</a>
+                <a id="btnRemove" class="btn btn-danger">{{_ "remove"}}</a>
+            </div>
+        </div>
+        <div class="clearfix"></div>
+        <table class="table">
+            <tbody>
+                <tr>
+<td><b>名称</b></td>
+<td>{{title}}</td>
+</tr>
+<tr>
+<td><b>岁月</b></td>
+<td>{{age}}</td>
+</tr>
+
+<!--                <tr>
+                    <td><b>Image</b></td>
+                    <td><img src="{{#if image}}{{app "baseUrl"}}{{image.url}}{{else}}{{app "baseUrl"}}/images/noimage.jpg{{/if}}"/></td>
+                </tr>                -->
+                <tr>
+                    <td><b>{{_ "created_at"}}</b></td>
+                    <td>{{moFormat createdAt "LLLL"}}</td>
+                </tr>
+                <tr>
+                    <td><b>{{_ "updated_at"}}</b></td>
+                    <td>{{moFormat updatedAt "LLLL"}}</td>
+                </tr>
+                <tr>
+                    <td><b>{{_ "created_by"}}</b></td>
+                    <td>{{createdUser.profile.name}}</td>
+                </tr>
+                <tr>
+                    <td><b>{{_ "updated_by"}}</b></td>
+                    <td>{{updatedUser.profile.name}}</td>
+                </tr>
+            </tbody>
+        </table>
+        {{/with}}
+    </div>
+</template>
